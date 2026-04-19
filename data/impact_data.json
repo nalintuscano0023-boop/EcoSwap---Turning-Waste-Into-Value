@@ -1,0 +1,32 @@
+{
+  "totals": {
+    "wasteKgSaved": 1284.7,
+    "co2Reduced": 3847.2,
+    "itemsRecycled": 8432,
+    "treesEquivalent": 512,
+    "usersActive": 2847,
+    "recyclersConnected": 6
+  },
+  "monthlyTrend": [
+    { "month": "Nov", "waste": 48, "co2": 142, "items": 310 },
+    { "month": "Dec", "waste": 62, "co2": 188, "items": 401 },
+    { "month": "Jan", "waste": 79, "co2": 234, "items": 512 },
+    { "month": "Feb", "waste": 95, "co2": 281, "items": 618 },
+    { "month": "Mar", "waste": 118, "co2": 347, "items": 784 },
+    { "month": "Apr", "waste": 143, "co2": 421, "items": 943 }
+  ],
+  "categoryBreakdown": [
+    { "category": "Plastic", "percentage": 34, "color": "#22c55e", "kg": 436.8 },
+    { "category": "E-Waste", "percentage": 22, "color": "#3b82f6", "kg": 282.6 },
+    { "category": "Cardboard", "percentage": 18, "color": "#f59e0b", "kg": 231.2 },
+    { "category": "Metal", "percentage": 14, "color": "#a855f7", "kg": 179.9 },
+    { "category": "Glass", "percentage": 8, "color": "#06b6d4", "kg": 102.7 },
+    { "category": "Other", "percentage": 4, "color": "#94a3b8", "kg": 51.5 }
+  ],
+  "impactEquivalents": {
+    "treesPlanted": 512,
+    "carKmAvoided": 19236,
+    "waterLitersSaved": 45820,
+    "energyKwhSaved": 3240
+  }
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Plastic Bottle",
+    "category": "plastic",
+    "weight": 0.05,
+    "co2Saved": 0.12,
+    "ecoPoints": 30,
+    "suggestion": "recycle",
+    "confidence": 94,
+    "description": "PET plastic bottle — highly recyclable",
+    "tips": ["Rinse before recycling", "Remove the cap separately", "Crush to save space"],
+    "timestamp": "2025-06-01T09:15:00Z",
+    "status": "recycled"
+  },
+  {
+    "id": 2,
+    "name": "Old Smartphone",
+    "category": "e-waste",
+    "weight": 0.18,
+    "co2Saved": 45.0,
+    "ecoPoints": 150,
+    "suggestion": "donate",
+    "confidence": 88,
+    "description": "Electronic device — requires certified e-waste handling",
+    "tips": ["Wipe personal data first", "Check for authorized e-waste centers", "Battery must be removed"],
+    "timestamp": "2025-06-03T14:30:00Z",
+    "status": "matched"
+  },
+  {
+    "id": 3,
+    "name": "Cardboard Box",
+    "category": "cardboard",
+    "weight": 0.35,
+    "co2Saved": 0.85,
+    "ecoPoints": 45,
+    "suggestion": "recycle",
+    "confidence": 97,
+    "description": "Corrugated cardboard — 100% recyclable",
+    "tips": ["Flatten before recycling", "Remove any tape or staples", "Keep dry"],
+    "timestamp": "2025-06-05T11:00:00Z",
+    "status": "recycled"
+  },
+  {
+    "id": 4,
+    "name": "Glass Jar",
+    "category": "glass",
+    "weight": 0.4,
+    "co2Saved": 0.32,
+    "ecoPoints": 35,
+    "suggestion": "reuse",
+    "confidence": 91,
+    "description": "Glass container — reuse or recycle",
+    "tips": ["Clean and reuse for storage", "Separate from other glass types", "Don't mix with ceramics"],
+    "timestamp": "2025-06-07T16:45:00Z",
+    "status": "uploaded"
+  },
+  {
+    "id": 5,
+    "name": "Aluminium Can",
+    "category": "metal",
+    "weight": 0.015,
+    "co2Saved": 0.19,
+    "ecoPoints": 25,
+    "suggestion": "recycle",
+    "confidence": 99,
+    "description": "Aluminium — endlessly recyclable material",
+    "tips": ["Rinse thoroughly", "Crush to save space", "High resale value"],
+    "timestamp": "2025-06-10T08:20:00Z",
+    "status": "recycled"
+  }
+]

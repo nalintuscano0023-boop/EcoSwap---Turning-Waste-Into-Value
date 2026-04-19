@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="EcoSwap – Turning Waste into Value. Connect reusable waste with recyclers, track your environmental impact, and earn eco points for a greener planet." />
+  <meta name="keywords"
+    content="recycling, waste management, sustainability, eco-friendly, plastic recycling, e-waste, environment" />
+  <meta property="og:title" content="EcoSwap – Turning Waste into Value" />
+  <meta property="og:description"
+    content="A platform connecting waste to reuse, recycling, and measurable environmental impact." />
+  <title>EcoSwap – Turning Waste into Value 🌱</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="nav-brand" href="#" id="nav-brand-link">
+        <span class="brand-icon">♻️</span>
+        <span class="brand-text">Eco<span class="brand-accent">Swap</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#" class="nav-link active" data-section="hero"><span class="emoji">🏠</span> Home</a></li>
+        <li><a href="#" class="nav-link" data-section="upload"><span class="emoji">📤</span> Upload Waste</a></li>
+        <li><a href="#" class="nav-link" data-section="impact"><span class="emoji">📊</span> Impact</a></li>
+        <li><a href="#" class="nav-link" data-section="recyclers"><span class="emoji">🔗</span> Recyclers</a></li>
+        <li><a href="#" class="nav-link" data-section="leaderboard"><span class="emoji">🏆</span> Leaderboard</a></li>
+        <li><a href="#" class="nav-link" data-section="simulator"><span class="emoji">🎛️</span> Simulator</a></li>
+        <li><a href="#" class="nav-link" data-section="feedback"><span class="emoji">💬</span> Feedback</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle dark/light mode">
+          <span class="theme-icon" id="theme-icon">🌙</span>
+        </button>
+        <button class="btn-demo" id="demo-btn">
+          <span class="emoji">▶️</span> Start Demo
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <div class="demo-progress-bar" id="demo-progress-bar">
+    <div class="demo-progress-fill" id="demo-progress-fill"></div>
+  </div>
+
+  <section class="section active" id="section-hero">
+
+    <div class="hero">
+      <div class="hero-bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          🌍 Join 2,847+ eco-warriors making a difference
+        </div>
+        <h1 class="hero-title">
+          Turn <span class="gradient-text">Waste</span><br />into <span class="gradient-text">Value</span> 🌱
+        </h1>
+        <p class="hero-tagline" id="hero-tagline" aria-label="Small actions. Big impact. Starting today."></p>
+        <p class="hero-subtitle">
+          Everyday plastic, e-waste, and household items get discarded simply because people don't know how or where to
+          recycle. <strong>EcoSwap bridges that gap</strong> — connecting you with verified recyclers, tracking your
+          impact, and rewarding every green action.
+        </p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-num" data-target="8432">0</span>
+            <span class="hero-stat-label">Items Recycled</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-num" data-target="3847">0</span>
+            <span class="hero-stat-label">kg CO₂ Saved</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-num" data-target="512">0</span>
+            <span class="hero-stat-label">Trees Equivalent 🌳</span>
+          </div>
+        </div>
+        <div class="hero-ctas">
+          <button class="btn-primary" id="hero-upload-btn">
+            <span class="emoji">📤</span> Upload Your Waste
+          </button>
+          <button class="btn-secondary" id="hero-impact-btn">
+            <span class="emoji">📊</span> See Impact
+          </button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="hero-float-card card-1">
+            <span class="float-icon">♻️</span>
+            <div>
+              <div class="float-title">Plastic Bottle</div>
+              <div class="float-sub">Matched with GreenCycle Solutions</div>
+            </div>
+            <span class="float-badge matched">Matched</span>
+          </div>
+          <div class="hero-main-orb">
+            <div class="orb-ring ring-1"></div>
+            <div class="orb-ring ring-2"></div>
+            <div class="orb-ring ring-3"></div>
+            <div class="orb-center">
+              <span class="orb-emoji">🌍</span>
+              <span class="orb-label">EcoSwap</span>
+            </div>
+          </div>
+          <div class="hero-float-card card-2">
+            <span class="float-icon">📱</span>
+            <div>
+              <div class="float-title">Old Smartphone</div>
+              <div class="float-sub">CO₂ saved: 45 kg</div>
+            </div>
+            <span class="float-badge recycled">Recycled</span>
+          </div>
+          <div class="hero-float-card card-3">
+            <span class="float-icon">🏆</span>
+            <div>
+              <div class="float-title">+150 Eco Points</div>
+              <div class="float-sub">Eco Warrior Level!</div>
+            </div>
+            <span class="float-badge points">+150 pts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="problem-solution">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Why EcoSwap?</span>
+          <h2><span class="emoji">⚠️</span> The Problem We're Solving</h2>
+          <p>Millions of reusable waste items are thrown away every day. Not because people don't care — but because
+            they don't know what to do.</p>
+        </div>
+        <div class="ps-grid">
+          <div class="ps-card problem-card">
+            <div class="ps-icon">❌</div>
+            <h3>The Problem</h3>
+            <ul class="ps-list">
+              <li>🗑️ Users don't know how or where to recycle</li>
+              <li>📦 Reusable waste gets thrown in landfills</li>
+              <li>📉 No way to track environmental impact</li>
+              <li>🔗 No connection between users & recyclers</li>
+            </ul>
+          </div>
+          <div class="ps-arrow">
+            <div class="arrow-line"></div>
+            <div class="arrow-head">→</div>
+          </div>
+          <div class="ps-card solution-card">
+            <div class="ps-icon">✅</div>
+            <h3>Our Solution</h3>
+            <ul class="ps-list">
+              <li>🤖 AI-powered reuse/recycle suggestions</li>
+              <li>🗺️ Connect with verified local recyclers</li>
+              <li>📊 Real-time environmental impact dashboard</li>
+              <li>🏆 Gamified eco-score & rewards</li>
+            </ul>
+          </div>
+        </div>
+        <div class="how-it-works">
+          <h3 class="hiw-title">How It Works</h3>
+          <div class="hiw-steps">
+            <div class="hiw-step">
+              <div class="hiw-num">1</div>
+              <div class="hiw-icon">📤</div>
+              <div class="hiw-label">Upload Waste</div>
+              <div class="hiw-desc">Add your item with category</div>
+            </div>
+            <div class="hiw-connector"></div>
+            <div class="hiw-step">
+              <div class="hiw-num">2</div>
+              <div class="hiw-icon">🤖</div>
+              <div class="hiw-label">Get Suggestion</div>
+              <div class="hiw-desc">AI recommends best action</div>
+            </div>
+            <div class="hiw-connector"></div>
+            <div class="hiw-step">
+              <div class="hiw-num">3</div>
+              <div class="hiw-icon">🤝</div>
+              <div class="hiw-label">Match Recycler</div>
+              <div class="hiw-desc">Connect with nearby partners</div>
+            </div>
+            <div class="hiw-connector"></div>
+            <div class="hiw-step">
+              <div class="hiw-num">4</div>
+              <div class="hiw-icon">🌍</div>
+              <div class="hiw-label">See Impact</div>
+              <div class="hiw-desc">Track your CO₂ savings</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="section" id="section-upload">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Step 1</span>
+        <h2><span class="emoji">📤</span> Upload Your Waste Item</h2>
+        <p>Tell us what you have. Our AI will analyze it and suggest the best eco-friendly action.</p>
+      </div>
+
+      <div class="upload-layout">
+
+        <div class="upload-form-card glass-card">
+          <h3 class="form-title">📤 Add Waste Item</h3>
+
+          <div class="sample-buttons">
+            <span class="sample-label">Quick add:</span>
+            <button class="btn-sample" data-sample="plastic" id="sample-plastic">🍾 Plastic Bottle</button>
+            <button class="btn-sample" data-sample="phone" id="sample-phone">📱 Old Phone</button>
+            <button class="btn-sample" data-sample="cardboard" id="sample-cardboard">📦 Cardboard Box</button>
+          </div>
+
+          <form id="waste-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="item-name">Item Name <span class="required">*</span></label>
+              <input type="text" id="item-name" class="form-input" placeholder="e.g., Plastic bottle, Old laptop..."
+                required maxlength="80" />
+              <span class="form-error" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="item-category">Category <span class="required">*</span></label>
+              <select id="item-category" class="form-input form-select" required>
+                <option value="">-- Select category --</option>
+                <option value="plastic">♻️ Plastic</option>
+                <option value="e-waste">📱 E-Waste / Electronics</option>
+                <option value="cardboard">📦 Cardboard / Paper</option>
+                <option value="metal">🔩 Metal / Aluminium</option>
+                <option value="glass">🫙 Glass</option>
+                <option value="organic">🌿 Organic / Food Waste</option>
+                <option value="textile">👗 Textile / Clothes</option>
+                <option value="furniture">🪑 Furniture</option>
+                <option value="other">🗂️ Other</option>
+              </select>
+              <span class="form-error" id="cat-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="item-weight">Approximate Weight (kg)</label>
+              <input type="number" id="item-weight" class="form-input" placeholder="e.g., 0.5" min="0.01" max="500"
+                step="0.01" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Item Image <span class="optional">(optional)</span></label>
+              <div class="image-upload-zone" id="image-upload-zone">
+                <div class="upload-icon">📷</div>
+                <div class="upload-text">Drop image here or <span class="upload-link">browse</span></div>
+                <div class="upload-hint">PNG, JPG, WEBP — max 5MB</div>
+                <input type="file" id="item-image" accept="image/*" class="file-input" />
+              </div>
+              <div class="image-preview-wrap" id="image-preview-wrap" style="display:none;">
+                <img id="image-preview" class="image-preview" alt="Preview" />
+                <button type="button" class="remove-image" id="remove-image">✕</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="item-notes">Notes <span class="optional">(optional)</span></label>
+              <textarea id="item-notes" class="form-input form-textarea"
+                placeholder="Any additional details about the item..." rows="3" maxlength="200"></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary btn-full" id="submit-btn">
+              <span class="btn-spinner" id="btn-spinner" style="display:none;"></span>
+              <span id="btn-text"><span class="emoji">🤖</span> Analyze & Upload</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="upload-right">
+
+          <div class="ai-loader glass-card" id="ai-loader" style="display:none; text-align: center; padding: 4rem 2rem;">
+            <div class="skeleton-box" style="height: 64px; width: 64px; border-radius: 50%; margin: 0 auto 1.5rem;"></div>
+            <div id="ai-loader-text" style="font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1.5rem; animation: pulse 1.5s infinite;">Analyzing waste...</div>
+            <div class="skeleton-box" style="height: 14px; width: 85%; margin: 0 auto 1rem; border-radius: 8px;"></div>
+            <div class="skeleton-box" style="height: 14px; width: 60%; margin: 0 auto; border-radius: 8px;"></div>
+          </div>
+
+          <div class="ai-suggestion-card glass-card" id="ai-card" style="display:none;">
+            <div class="ai-header">
+              <div class="ai-icon">🤖</div>
+              <div>
+                <div class="ai-title">AI Recommendation</div>
+                <div class="ai-subtitle">EcoSwap Smart Analysis</div>
+              </div>
+              <div class="ai-confidence" id="ai-confidence">
+                <span id="confidence-num">0</span>% confidence
+              </div>
+            </div>
+            <div class="ai-action-badge" id="ai-action-badge">
+              <span id="ai-action-icon">♻️</span>
+              <span id="ai-action-text">Recycle</span>
+            </div>
+            <div class="ai-reasoning" id="ai-reasoning"></div>
+            <div class="ai-tips" id="ai-tips"></div>
+            <div class="ai-impact-row">
+              <div class="ai-impact-item">
+                <span class="ai-impact-icon">⚖️</span>
+                <span id="ai-weight">–</span>
+                <span class="ai-impact-label">kg waste</span>
+              </div>
+              <div class="ai-impact-item">
+                <span class="ai-impact-icon">🌿</span>
+                <span id="ai-co2">–</span>
+                <span class="ai-impact-label">kg CO₂ saved</span>
+              </div>
+              <div class="ai-impact-item">
+                <span class="ai-impact-icon">⭐</span>
+                <span id="ai-points">–</span>
+                <span class="ai-impact-label">eco pts</span>
+              </div>
+            </div>
+            <div class="confidence-bar-wrap">
+              <div class="confidence-bar" id="confidence-bar"></div>
+            </div>
+            <button class="btn-primary btn-full" id="find-recycler-btn">
+              <span class="emoji">🔗</span> Find Matching Recycler
+            </button>
+          </div>
+
+          <div class="journey-card glass-card" id="journey-card" style="display:none;">
+            <h4 class="journey-title">♻️ Waste Journey</h4>
+            <div class="journey-steps" id="journey-steps">
+              <div class="journey-step" data-step="0">
+                <div class="journey-dot active"></div>
+                <div class="journey-content">
+                  <div class="journey-step-title">📤 Uploaded</div>
+                  <div class="journey-step-desc" id="journey-uploaded-desc">Item submitted</div>
+                </div>
+              </div>
+              <div class="journey-step" data-step="1">
+                <div class="journey-dot"></div>
+                <div class="journey-content">
+                  <div class="journey-step-title">🤖 Suggested</div>
+                  <div class="journey-step-desc">AI analysis complete</div>
+                </div>
+              </div>
+              <div class="journey-step" data-step="2">
+                <div class="journey-dot"></div>
+                <div class="journey-content">
+                  <div class="journey-step-title">🤝 Matched</div>
+                  <div class="journey-step-desc">Recycler assigned</div>
+                </div>
+              </div>
+              <div class="journey-step" data-step="3">
+                <div class="journey-dot"></div>
+                <div class="journey-content">
+                  <div class="journey-step-title">✅ Recycled</div>
+                  <div class="journey-step-desc">Environmental impact logged</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="eco-score-card glass-card" id="eco-score-card">
+            <div class="score-header">
+              <div class="score-icon">🏆</div>
+              <div>
+                <div class="score-title">Your Eco Score</div>
+                <div class="score-level" id="score-level">Beginner 🌱</div>
+              </div>
+              <div class="score-pts" id="score-pts">0 pts</div>
+            </div>
+            <div class="score-bar-wrap">
+              <div class="score-bar">
+                <div class="score-bar-fill" id="score-bar-fill" style="width:0%"></div>
+              </div>
+              <div class="score-bar-labels">
+                <span>Beginner 🌱</span>
+                <span>Eco Warrior 🌍</span>
+                <span>Planet Saver 🚀</span>
+              </div>
+            </div>
+            <div class="score-next" id="score-next">Upload your first item to start earning points!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-items-section" id="my-items-section" style="display:none;">
+        <h3 class="my-items-title">📋 My Uploaded Items</h3>
+        <div class="my-items-grid" id="my-items-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="section-impact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Dashboard</span>
+        <h2><span class="emoji">📊</span> Environmental Impact</h2>
+        <p>Real-time metrics showing the collective power of our EcoSwap community.</p>
+      </div>
+
+      <div class="impact-counters" id="impact-counters">
+        <div class="counter-card glass-card">
+          <div class="counter-icon">⚖️</div>
+          <div class="counter-num" data-target="1284.7" data-decimal="1" id="cnt-waste">0</div>
+          <div class="counter-label">kg Waste Saved</div>
+          <div class="counter-equiv">= <span id="equiv-waste">256,940</span> plastic bags</div>
+        </div>
+        <div class="counter-card glass-card">
+          <div class="counter-icon">💨</div>
+          <div class="counter-num" data-target="3847.2" data-decimal="1" id="cnt-co2">0</div>
+          <div class="counter-label">kg CO₂ Reduced</div>
+          <div class="counter-equiv">= <span>19,236</span> km car avoided</div>
+        </div>
+        <div class="counter-card glass-card">
+          <div class="counter-icon">♻️</div>
+          <div class="counter-num" data-target="8432" data-decimal="0" id="cnt-items">0</div>
+          <div class="counter-label">Items Recycled</div>
+          <div class="counter-equiv">= <span>2,109</span> fully circular</div>
+        </div>
+        <div class="counter-card glass-card">
+          <div class="counter-icon">🌳</div>
+          <div class="counter-num" data-target="512" data-decimal="0" id="cnt-trees">0</div>
+          <div class="counter-label">Trees Equivalent</div>
+          <div class="counter-equiv">= <span>512</span> saplings planted</div>
+        </div>
+      </div>
+
+      <div class="impact-comparison glass-card">
+        <h3 class="ic-title">🌱 What Does This Actually Mean?</h3>
+        <div class="ic-grid">
+          <div class="ic-item">
+            <div class="ic-emoji">🌳</div>
+            <div class="ic-num">512</div>
+            <div class="ic-desc">Trees planted equivalent</div>
+          </div>
+          <div class="ic-item">
+            <div class="ic-emoji">🚗</div>
+            <div class="ic-num">19,236</div>
+            <div class="ic-desc">km of car driving avoided</div>
+          </div>
+          <div class="ic-item">
+            <div class="ic-emoji">💧</div>
+            <div class="ic-num">45,820</div>
+            <div class="ic-desc">litres of water saved</div>
+          </div>
+          <div class="ic-item">
+            <div class="ic-emoji">⚡</div>
+            <div class="ic-num">3,240</div>
+            <div class="ic-desc">kWh of energy saved</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="charts-row">
+        <div class="chart-card glass-card">
+          <h3 class="chart-title">📈 Monthly Recycling Trend</h3>
+          <div class="bar-chart" id="bar-chart">
+
+          </div>
+          <div class="chart-legend">
+            <span class="legend-dot green"></span> Waste (kg)
+            <span class="legend-dot blue"></span> CO₂ (kg)
+          </div>
+        </div>
+        <div class="chart-card glass-card">
+          <h3 class="chart-title">🥧 Waste by Category</h3>
+          <div class="pie-chart-wrap">
+            <canvas id="pie-chart" width="220" height="220"></canvas>
+            <div class="pie-center-label">
+              <div class="pie-total" id="pie-total">6</div>
+              <div class="pie-sub">categories</div>
+            </div>
+          </div>
+          <div class="pie-legend" id="pie-legend"></div>
+        </div>
+      </div>
+
+      <div class="timeline-card glass-card">
+        <h3 class="tl-title">📅 Your Impact Timeline</h3>
+        <div class="timeline" id="impact-timeline">
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="section-recyclers">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Step 3</span>
+        <h2><span class="emoji">🔗</span> Find a Recycler Near You</h2>
+        <p>Verified, certified recycling partners ready to accept your waste items.</p>
+      </div>
+
+      <div class="recycler-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="plastic">Plastic</button>
+        <button class="filter-btn" data-filter="e-waste">E-Waste</button>
+        <button class="filter-btn" data-filter="metal">Metal</button>
+        <button class="filter-btn" data-filter="organic">Organic</button>
+        <button class="filter-btn" data-filter="glass">Glass</button>
+      </div>
+
+      <div class="recyclers-grid" id="recyclers-grid">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="section-leaderboard">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Community</span>
+        <h2><span class="emoji">🏆</span> Eco Warriors Leaderboard</h2>
+        <p>Top contributors making the biggest environmental impact this month.</p>
+      </div>
+
+      <div class="leaderboard-layout">
+        <div class="podium-section">
+          <div class="podium" id="podium"></div>
+        </div>
+        <div class="leaderboard-table-wrap glass-card">
+          <table class="leaderboard-table" id="leaderboard-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>User</th>
+                <th>City</th>
+                <th>Level</th>
+                <th>Items</th>
+                <th>CO₂ Saved</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody id="leaderboard-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="section-simulator">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What-If</span>
+        <h2><span class="emoji">🎛️</span> Impact Simulator</h2>
+        <p>See how small habit changes create massive environmental impact over time.</p>
+      </div>
+
+      <div class="simulator-layout">
+        <div class="simulator-controls glass-card">
+          <h3 class="sim-title">⚙️ Adjust Your Habits</h3>
+
+          <div class="sim-control">
+            <div class="sim-control-header">
+              <label>♻️ Items recycled per week</label>
+              <span class="sim-val" id="sim-items-val">5</span>
+            </div>
+            <input type="range" class="sim-slider" id="sim-items" min="1" max="30" value="5" />
+            <div class="sim-range-labels"><span>1</span><span>30</span></div>
+          </div>
+
+          <div class="sim-control">
+            <div class="sim-control-header">
+              <label>🗓️ Time period (months)</label>
+              <span class="sim-val" id="sim-months-val">6</span>
+            </div>
+            <input type="range" class="sim-slider" id="sim-months" min="1" max="24" value="6" />
+            <div class="sim-range-labels"><span>1 mo</span><span>24 mo</span></div>
+          </div>
+
+          <div class="sim-control">
+            <div class="sim-control-header">
+              <label>⚖️ Average item weight (kg)</label>
+              <span class="sim-val" id="sim-weight-val">0.5 kg</span>
+            </div>
+            <input type="range" class="sim-slider" id="sim-weight" min="0.1" max="5.0" value="0.5" step="0.1" />
+            <div class="sim-range-labels"><span>0.1 kg</span><span>5 kg</span></div>
+          </div>
+
+          <div class="sim-control">
+            <div class="sim-control-header">
+              <label>📦 Waste category</label>
+            </div>
+            <select class="form-input form-select sim-select" id="sim-category">
+              <option value="plastic">Plastic (CO₂ factor: 2.4)</option>
+              <option value="e-waste">E-Waste (CO₂ factor: 250)</option>
+              <option value="metal">Metal (CO₂ factor: 4.1)</option>
+              <option value="cardboard">Cardboard (CO₂ factor: 2.4)</option>
+              <option value="glass">Glass (CO₂ factor: 0.8)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="simulator-results">
+          <div class="sim-result-card glass-card sim-main-result">
+            <div class="sim-result-icon">🌱</div>
+            <div class="sim-result-num" id="sim-waste-total">65</div>
+            <div class="sim-result-label">kg waste diverted</div>
+          </div>
+          <div class="sim-result-card glass-card">
+            <div class="sim-result-icon">💨</div>
+            <div class="sim-result-num" id="sim-co2-total">156</div>
+            <div class="sim-result-label">kg CO₂ saved</div>
+          </div>
+          <div class="sim-result-card glass-card">
+            <div class="sim-result-icon">🌳</div>
+            <div class="sim-result-num" id="sim-trees-total">21</div>
+            <div class="sim-result-label">trees equivalent</div>
+          </div>
+          <div class="sim-result-card glass-card">
+            <div class="sim-result-icon">⭐</div>
+            <div class="sim-result-num" id="sim-pts-total">975</div>
+            <div class="sim-result-label">eco points earned</div>
+          </div>
+          <div class="sim-message glass-card" id="sim-message">
+            🌍 Recycling just <strong>5 items/week</strong> for <strong>6 months</strong> is equivalent to planting
+            <strong>21 trees</strong>!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="section-feedback">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-tag">Community</span>
+        <h2>Feedback 💬</h2>
+        <p>Help us improve EcoSwap. Your feedback shapes our platform for a greener planet.</p>
+      </div>
+
+      <div class="feedback-layout">
+
+        <div class="feedback-form-card glass-card reveal">
+          <h3 class="fb-title">📝 Share Your Feedback</h3>
+          <form id="feedback-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="fb-name">Your Name <span class="optional">(optional)</span></label>
+              <input type="text" id="fb-name" class="form-input" placeholder="e.g., Nalin Tuscano" maxlength="60" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="fb-message">Feedback <span class="required">*</span></label>
+              <textarea id="fb-message" class="form-input form-textarea" rows="4"
+                placeholder="Tell us what you love, what could be better, or a feature you'd like to see..."
+                maxlength="500" required></textarea>
+              <span class="form-error" id="fb-error"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Rating</label>
+              <div class="star-rating" id="star-rating" role="radiogroup" aria-label="Star rating">
+                <button type="button" class="star" data-value="1" aria-label="1 star">★</button>
+                <button type="button" class="star" data-value="2" aria-label="2 stars">★</button>
+                <button type="button" class="star" data-value="3" aria-label="3 stars">★</button>
+                <button type="button" class="star" data-value="4" aria-label="4 stars">★</button>
+                <button type="button" class="star" data-value="5" aria-label="5 stars">★</button>
+              </div>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="fb-submit-btn">
+              <span class="btn-spinner" id="fb-spinner" style="display:none;"></span>
+              <span id="fb-btn-text"><span class="emoji">📤</span> Submit Feedback</span>
+            </button>
+          </form>
+
+          <div class="fb-success" id="fb-success" style="display:none;">
+            <div class="fb-success-icon">🎉</div>
+            <div class="fb-success-title">Thank you for your feedback!</div>
+            <div class="fb-success-sub">Your input helps us build a better EcoSwap for everyone. 🌱</div>
+            <button class="btn-secondary" id="fb-again-btn" style="margin-top:1rem;">Submit Another</button>
+          </div>
+        </div>
+
+        <div class="feedback-right">
+
+          <div class="glass-card reveal" style="transition-delay:0.1s">
+            <h4 class="fb-section-title">💬 Recent Community Feedback</h4>
+            <div id="recent-feedback-list">
+              <div class="fb-empty">No feedback yet. Be the first! 🌱</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">♻️ EcoSwap</span>
+          <p>Turning waste into value, one item at a time. Building a sustainable future together.</p>
+          <div class="footer-socials">
+            <span class="social-pill">🌍 Open Source</span>
+            <span class="social-pill">🇮🇳 Made in India</span>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4><span class="emoji">🔗</span> Quick Links</h4>
+          <ul>
+            <li><a href="#" data-section="hero"><span class="emoji">🏠</span> Home</a></li>
+            <li><a href="#" data-section="upload"><span class="emoji">📤</span> Upload Waste</a></li>
+            <li><a href="#" data-section="impact"><span class="emoji">📊</span> Impact Dashboard</a></li>
+            <li><a href="#" data-section="recyclers"><span class="emoji">🔗</span> Find Recyclers</a></li>
+            <li><a href="#" data-section="leaderboard"><span class="emoji">🏆</span> Leaderboard</a></li>
+            <li><a href="#" data-section="feedback"><span class="emoji">💬</span> Feedback</a></li>
+          </ul>
+        </div>
+        <div class="footer-stats">
+          <h4>Platform Stats</h4>
+          <div class="footer-stat">🌱 <strong>2,847</strong> active users</div>
+          <div class="footer-stat">♻️ <strong>8,432</strong> items recycled</div>
+          <div class="footer-stat">💨 <strong>3,847</strong> kg CO₂ reduced</div>
+          <div class="footer-stat">🤝 <strong>6</strong> verified recyclers</div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 EcoSwap – Turning Waste into Value 🌱 | Built for a greener planet</p>
+        <p class="footer-tagline">"Be the change the environment needs."</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
